@@ -13,7 +13,7 @@ public class Processing {
 	public static void capitalize() {
 		String inputTopic = "flink-input";
 		String outputTopic = "flink-output";
-		String consumerGroup = "nageshflinkkafka";
+		String consumerGroup = "flinkkafka";
 		String address = "localhost:9092";
 		StreamExecutionEnvironment environment = StreamExecutionEnvironment.getExecutionEnvironment();
 		FlinkKafkaConsumer011<String> flinkKafkaConsumer = createStringConsumerForTopic(inputTopic, address,
